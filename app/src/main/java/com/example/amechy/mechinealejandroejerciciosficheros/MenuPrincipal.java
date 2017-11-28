@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.amechy.mechinealejandroejerciciosficheros.ejercicio1.AnadirContacto;
+import com.example.amechy.mechinealejandroejerciciosficheros.ejercicio2.Ejercicio2;
+import com.example.amechy.mechinealejandroejerciciosficheros.ejercicio3.Ejercicio3;
 
 public class MenuPrincipal extends AppCompatActivity implements View.OnClickListener{
 

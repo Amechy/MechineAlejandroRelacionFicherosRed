@@ -2,7 +2,10 @@ package com.example.amechy.mechinealejandroejerciciosficheros;
 import android.content.Context;
 
 import android.os.Environment;
+import android.widget.Toast;
 
+
+import com.example.amechy.mechinealejandroejerciciosficheros.ejercicio2.Ejercicio2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,6 +35,7 @@ public class Memoria {
         File miFichero, tarjeta;
         tarjeta = Environment.getExternalStorageDirectory();
         miFichero = new File(tarjeta.getAbsolutePath(), fichero);
+
         return escribir(miFichero, cadena, anadir, codigo);
     }
 

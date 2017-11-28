@@ -63,7 +63,7 @@ public class AnadirContacto extends AppCompatActivity implements View.OnClickLis
             Toast.makeText(this, "Tienes que rellenar todos los campos", Toast.LENGTH_SHORT).show();
         }
         else {
-            persona = etxNombre.getText().toString()+";"+ etxApellido.getText().toString()+";"+etxEmail.getText().toString()+";"+etxTelefono.getText().toString()+"\n";
+            persona = etxNombre.getText().toString()+"; "+ etxApellido.getText().toString()+"; "+etxEmail.getText().toString()+"; "+etxTelefono.getText().toString()+"\n";
             miMemoria.escribirInterna(nombreFichero, persona, true, CODIFICACION);
             Toast.makeText(this, "Guardando contacto", Toast.LENGTH_SHORT).show();
         }
