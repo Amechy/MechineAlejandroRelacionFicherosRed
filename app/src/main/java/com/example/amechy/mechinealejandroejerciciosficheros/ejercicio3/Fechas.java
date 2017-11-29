@@ -29,23 +29,7 @@ import java.util.List;
 
 public class Fechas {
 
-    String[] diasFestivosArray = {"02-01-2017", "06-01-2017", "28-02-2017", "13-04-2017", "14-04-2017", "15-08-2017", "19-08-2017", "08-09-2017", "12-10-2017", "01-11-2017", "06-12-2017", "08-12-2017", "25-12-2017"};
-    List<String> diasFestivos = Arrays.asList(diasFestivosArray);
-    Memoria miMemoria;
-    public void DeterminarNoLectivos(Date fechaInicio, Date fechaFin){
 
-        Calendar calendar = new GregorianCalendar();
-        calendar.setTime(fechaInicio);
-
-        while (fechaInicio.before(fechaFin)){
-            if (calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || calendar.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY){
-                diasFestivos.add(new SimpleDateFormat("dd-MM-yyyy").format(fechaInicio));
-            }
-            calendar.add(Calendar.DAY_OF_YEAR,1);
-        }
-
-
-    }
 
 
 
