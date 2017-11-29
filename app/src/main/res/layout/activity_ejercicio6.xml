@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.amechy.mechinealejandroejerciciosficheros.Ejercicio6">
+    <LinearLayout
+        android:id="@+id/lLay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/euro"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+        <EditText
+            android:id="@+id/etxEuro"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="37dp"
+            android:inputType="numberDecimal"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lLay1">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dolares"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            />
+        <EditText
+            android:id="@+id/etxDolar"
+            android:enabled="false"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgpConversor"
+        android:layout_below="@+id/lLay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtnDolar"
+            android:text="@string/dolaresAEuros"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtnEuro"
+            android:checked="true"
+            android:text="@string/eurosADolares"
+            android:textSize="20dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConvertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="onClick"
+        />
+
+
+</LinearLayout>

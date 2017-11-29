@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MechineAlejandroEjerciciosFicheros</string>
+
+    <string name="dolares">Dólares: </string>
+    <string name="euro">Euros: </string>
+    <string name="dolaresAEuros">Dólares a Euros</string>
+    <string name="eurosADolares">Euros a Dólares</string>
 </resources>

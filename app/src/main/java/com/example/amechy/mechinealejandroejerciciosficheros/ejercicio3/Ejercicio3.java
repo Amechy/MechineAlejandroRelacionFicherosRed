@@ -98,7 +98,7 @@ public class Ejercicio3 extends AppCompatActivity implements View.OnClickListene
 
             } else {
 
-                Toast.makeText(Ejercicio3.this, "La fecha de inicio tiene que ser anterior a la fecha de fin", Toast.LENGTH_LONG);
+                Toast.makeText(Ejercicio3.this, "La fecha de inicio tiene que ser anterior a la fecha de fin", Toast.LENGTH_LONG).show();
             }
 
 
@@ -167,9 +167,9 @@ public class Ejercicio3 extends AppCompatActivity implements View.OnClickListene
         }
         try {
             miMemoria.escribirExterna(FICHERO, tmp, true, CODIFICACION);
-            Toast.makeText(Ejercicio3.this, "Dias lectivos guardados con exito en diasLectivos.txt", Toast.LENGTH_LONG);
+            Toast.makeText(Ejercicio3.this, "Dias lectivos guardados con exito en diasLectivos.txt", Toast.LENGTH_LONG).show();
         } catch (Exception e) {
-            Toast.makeText(Ejercicio3.this, "Problema al guardar el fichero de dias lectivos", Toast.LENGTH_LONG);
+            Toast.makeText(Ejercicio3.this, "Problema al guardar el fichero de dias lectivos", Toast.LENGTH_LONG).show();
         }
 
 
